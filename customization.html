@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Dream - Customization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">PC Dream</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="customization.html">Customization</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="customization">
+        <h2>Customize Your Gaming PC</h2>
+        <label>CPU:</label>
+        <select id="cpu-select" onchange="updatePrice()">
+            <option value="Intel i5">Intel i5</option>
+            <option value="Intel i7">Intel i7</option>
+            <option value="AMD Ryzen 5">AMD Ryzen 5</option>
+            <option value="AMD Ryzen 7">AMD Ryzen 7</option>
+        </select>
+
+        <label>GPU:</label>
+        <select id="gpu-select" onchange="updatePrice()">
+            <option value="NVIDIA RTX 3060">NVIDIA RTX 3060</option>
+            <option value="NVIDIA RTX 3070">NVIDIA RTX 3070</option>
+            <option value="AMD RX 6700">AMD RX 6700</option>
+        </select>
+
+        <label>RAM:</label>
+        <select id="ram-select" onchange="updatePrice()">
+            <option value="16GB DDR4">16GB DDR4</option>
+            <option value="32GB DDR4">32GB DDR4</option>
+            <option value="64GB DDR5">64GB DDR5</option>
+        </select>
+
+        <label>Storage:</label>
+        <select id="storage-select" onchange="updatePrice()">
+            <option value="2TB SSD">2TB SSD</option>
+            <option value="1TB SSD">1TB SSD</option>
+            <option value="512GB SSD">512GB SSD</option>
+        </select>
+
+        <h3>Total Price: <span id="total-price">$0</span></h3>
+        <button onclick="addCustomPCToCart()">Add Custom PC to Cart</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PC Dream. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

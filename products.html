@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Dream - Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">PC Dream</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="customization.html">Customization</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="products">
+        <div class="product-card">
+            <img src="photos/pc1.webp" alt="Gaming PC 1">
+            <h2>PC Sweet Dreams</h2>
+            <p class="price">$1500</p>
+            <button onclick="addToCart('Gaming PC Sweet', 1500)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="photos/pc2.webp" alt="Gaming PC 2">
+            <h2>PC Don't Wake Me Up</h2>
+            <p class="price">$1400</p>
+            <button onclick="addToCart('Gaming PC Dont', 1400)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="photos/pc3.webp" alt="Gaming PC 3">
+            <h2>PC Five More Minutes</h2>
+            <p class="price">$1350</p>
+            <button onclick="addToCart('Gaming PC Five', 1350)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="photos/pc4.webp" alt="Gaming PC 4">
+            <h2>PC Pillow</h2>
+            <p class="price">$1000</p>
+            <button onclick="addToCart('Gaming PC Pillow', 1000)">Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PC Dream. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
